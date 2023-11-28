@@ -6,27 +6,27 @@ This is a solution for the FWW (Fly Without Wings) problem. The problem is to fi
 
 ### Passenger Sequence Diagram
 
-![Alt text](image-2.png)
+![Alt text](./profile/image-2.png)
 
 ### Booking Sequence Diagram
 
-![Alt text](image-3.png)
+![Alt text](./profile/image-3.png)
 
 ### Payment Sequence Diagram
 
-![Alt text](image-4.png)
+![Alt text](./profile/image-4.png)
 
 ### Redeem Ticket Sequence Diagram
 
-![Alt text](image-5.png)
+![Alt text](./profile/image-5.png)
 
 ## System Design
 
-![Alt text](image-1.png)
+![Alt text](./profile/image-6.png)
 
 ## ERD
 
-![Alt text](image.png)
+![Alt text](./profile/image.png)
 
 ## API Documentation
 
