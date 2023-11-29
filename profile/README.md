@@ -110,6 +110,37 @@ example output:
 
 ![Alt text](./profile/image-1.png)
 
+### Load Test
+
+We are using [hey](https://github.com/rakyll/hey) to perform load test. To install hey, please run the following command:
+
+```bash
+
+hey http://13.229.45.20:8082/api/v1/booking -H "Content-Type: application/json" -m POST -n 172 -c 50 -d "{
+  "flight_id": 2,
+  "user_id": 2,
+  "book_details": [
+    {
+      "passanger_id": 2,
+      "class": "Economy",
+      "baggage": 20,
+      "seat_number": "12A"
+    },
+    {
+      "passanger_id": 3,
+      "class": "Economy",
+      "baggage": 30,
+      "seat_number": "1B"
+    }
+  ]
+}"
+```
+
+output example:
+
+![Alt text](./profile/image-7.png)
+
+
 ## How to deploy
 
 ### Docker Local
