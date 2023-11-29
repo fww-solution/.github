@@ -92,6 +92,24 @@ make test
 
 ### E2E Test
 
+To perform E2E we need to run the following command:
+
+Install newman postman
+
+```bash
+npm install -g newman
+```
+
+Run the following command:
+
+```bash
+newman run fww_solution.postman_collection.json -e fww_development.postman_environment.json
+```
+
+example output:
+
+![Alt text](./profile/image-1.png)
+
 ## How to deploy
 
 ### Docker Local
