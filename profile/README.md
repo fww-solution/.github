@@ -46,13 +46,13 @@ To view the API documentation, please run the application and go to the followin
 
 All repositories are hosted on GitHub. The following is the list of repositories:
 
-- https://github.com/fww-solution/fww-wrapper.git
+- [https://github.com/fww-solution/fww-wrapper.git](https://github.com/fww-solution/fww-wrapper.git)
 
-- https://github.com/fww-solution/fww-core.git
+- [https://github.com/fww-solution/fww-core.git](https://github.com/fww-solution/fww-core.git)
 
-- https://github.com/fww-solution/bpm-wrapper.git
+- [https://github.com/fww-solution/bpm-wrapper.git](https://github.com/fww-solution/bpm-wrapper.git)
 
-- https://github.com/fww-solution/bpm-rintime.git
+- [https://github.com/fww-solution/bpm-rintime.git](https://github.com/fww-solution/bpm-rintime.git)
 
 ### Prerequisites
 
@@ -114,6 +114,21 @@ example output:
 
 ### Docker Local
 
+To deploy the application locally, please run the following command:
+
+clone the repository
+
+```bash
+git clone https://github.com/fww-solution/fww-sre.git
+
+```bash
+cd deploy/local && make deploy-local
+```
+
 ### Deploy to Kubernetes
 
 ## How to monitor
+
+To monitor logs, we using portainer. To access portainer, please go to the following URL:
+
+http://(PUBLIC_URL):9000
