@@ -115,8 +115,7 @@ example output:
 We are using [hey](https://github.com/rakyll/hey) to perform load test. To install hey, please run the following command:
 
 ```bash
-
-hey http://13.229.45.20:8082/api/v1/booking -H "Content-Type: application/json" -m POST -n 172 -c 50 -d "{
+hey -H "Content-Type: application/json" -m POST -n 172 -c 50 -d '{
   "flight_id": 2,
   "user_id": 2,
   "book_details": [
@@ -133,12 +132,12 @@ hey http://13.229.45.20:8082/api/v1/booking -H "Content-Type: application/json" 
       "seat_number": "1B"
     }
   ]
-}"
+}' http://13.229.45.20:8082/api/v1/booking
 ```
 
 output example:
 
-![Alt text](./profile/image-7.png)
+![Alt text](./profile/image-8.png)
 
 
 ## How to deploy
