@@ -94,6 +94,10 @@ make test
 
 To perform E2E we need to run the following command:
 
+[postman collection](./fww_soution.postman_collection.json)
+
+[postman environment](./fww_development.postman_environment.json)
+
 Install newman postman
 
 ```bash
@@ -132,7 +136,7 @@ hey -H "Content-Type: application/json" -m POST -n 172 -c 50 -d '{
       "seat_number": "1B"
     }
   ]
-}' http://13.229.45.20:8082/api/v1/booking
+}' http://{URL}/api/v1/booking
 ```
 
 output example:
@@ -155,10 +159,16 @@ git clone https://github.com/fww-solution/fww-sre.git
 cd deploy/local && make deploy-local
 ```
 
-### Deploy to Kubernetes
-
 ## How to monitor
 
-To monitor logs, we using portainer. To access portainer, please go to the following URL:
+To monitor logs, we using grafana and prometheus. To access grafana, please go to the following URL:
 
-http://(PUBLIC_URL):9000
+```bash
+
+http://(PUBLIC_URL):8084
+
+```
+
+example output:
+
+![Alt text](./profile/image-7.png)
